@@ -31,8 +31,8 @@ playersList.appendChild(playerItem)
 
 const createPlayerItem = function(form){
 
-const playerItem = document.createElement('li');
-playerItem.classList.add('player-item');
+const playerItem = document.createElement('ul');
+playerItem.setAttribute("id", "styletest")
 
 const player = document.createElement('h2');
 player.textContent = form.player.value;
