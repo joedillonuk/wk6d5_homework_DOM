@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>eSports!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="player" class="primary">Player</label>
+          <input type="text" id="player" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="character" class="primary">Character</label>
+          <input type="text" id="character" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="game" class="primary">Game</label>
+          <select id="game">
+            <option value="" disabled selected></option>
+            <option value="SF2">Super Street Figther II Turbo</option>
+            <option value="SFA2">Street Fighter Alpha 3</option>
+            <option value="SF3">Street Fighter III: 3rd Strike</option>
+            <option value="SF4">Ultra Street Fighter IV</option>
+            <option value="SF5">Street Fighter V</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>eSports!</h1>
+    <ul id="players"></ul>
+
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
